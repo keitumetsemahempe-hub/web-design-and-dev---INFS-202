@@ -1,0 +1,92 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-center {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    outline: none;
+}
+
+.nav-right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-right a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s ;
+}
+
+.nav-right a:hover {
+    color: rgb(206, 28, 28);
+}
+
+.add-btn {
+    background: linear-gradient(135deg, #f97316, #fb923c);
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: white !important;
+}
+
+.icon {
+    font-size: 18px;
+    color: #d1d5db;
+    cursor: pointer;
+   
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    
+}
+
+.nav-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap:  16px;
+    align-items: center;
+}
