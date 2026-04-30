@@ -1,0 +1,100 @@
+.tasks-container {
+    padding: 30px;
+    color: #e5e7eb;
+}
+
+.tasks-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tasks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.task-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 16px;
+   
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: 0.3s ease;
+}
+
+.task-card h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.completed {
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.task-actions button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.2s ease;
+
+    background: rgba(255, 255, 255, 0.08);
+    color: #e5e7eb;
+}
+
+.task-actions button:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.task-actions .delete:hover {
+    background: rgba(239, 68, 68, 0.4);
+}
+
+.icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    
+    background: rgba(255, 255, 255, 0.08);
+    color: #e5e7eb;
+
+    transition: 0.2s ;
+}
+
+.icon-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.icon-btn.delete {
+    color: #ef4444;
+}
+
+@media (max-width: 500px) {
+    .add-card {
+        width: 90px;
+        padding: 20px;
+    }
+    .add-actions {
+        flex-direction: column;
+    }
+    .create-btn, .cancel-btn {
+        width:100%;
+    }
+}
