@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { FiSearch, FiBell } from "react-icons/fi";
-import "./Navbar.css";
+import "./navbar.css";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
