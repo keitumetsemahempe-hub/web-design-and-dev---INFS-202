@@ -2,11 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Node.js Express backend",
-  "main": "index.js",
+  "main": "server.js", 
   "type": "commonjs",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js",
+    "start": "node server.js",  
+    "dev": "node server.js",   
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,6 +20,8 @@
     "jsonwebtoken": "^9.0.3",
     "mssql": "^12.5.0",
     "mysql2": "^3.22.2"
+  },
+  "engines": {
+    "node": "16.x"  
   }
 }
-
