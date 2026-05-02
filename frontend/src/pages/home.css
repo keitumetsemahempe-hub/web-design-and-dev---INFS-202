@@ -1,24 +1,17 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: #0b1220;
-    font-family: Arial, sans-serif;
-    color: white;
-}
 
 
 .home-container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 40px 20px;
-    padding-top: 60px;
+    padding:60px 40px 20px;
+  
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
-/* HEADER SECTION */
+
 .home-header {
     text-align: center;
 }
@@ -33,7 +26,7 @@ body {
     font-size: 14px;
 }
 
-/* STATS GRID (THIS FIXES YOUR DASHBOARD LOOK) */
+
 .stats-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -43,7 +36,6 @@ body {
     max-width: 800px;
 }
 
-/* CARD */
 .stat-card {
     background: rgba(255, 255, 255, 0.08);
     padding: 20px;
@@ -55,20 +47,20 @@ body {
     backdrop-filter: blur(10px);
 }
 
-/* TITLE */
+
 .stat-card h3 {
     font-size: 14px;
     opacity: 0.7;
     margin-bottom: 10px;
 }
 
-/* NUMBER */
+
 .stat-number {
     font-size: 28px;
     font-weight: bold;
 }
 
-/* COLORS */
+
 .stat-number.done {
     color: #22c55e;
 }
@@ -77,7 +69,7 @@ body {
     color: #f59e0b;
 }
 
-/* BUTTON */
+
 .home-action {
     margin-top: 10px;
 }
