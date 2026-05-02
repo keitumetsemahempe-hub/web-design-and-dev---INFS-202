@@ -28,4 +28,4 @@ npm install
 Start the project:
 npm start
 
-This will run the app on https://web-design-and-dev-infs-202-msm5.vercel.app
+This will run the app on https://web-design-and-dev-infs-202-8z6x.vercel.app/

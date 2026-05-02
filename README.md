@@ -30,6 +30,6 @@ npm install
 npm run dev
 Live URL
 
-Live Demo url : https://web-design-and-dev-infs-202-msm5.vercel.app
+Live Demo url : https://web-design-and-dev-infs-202-8z6x.vercel.app/
 Backend URL: https://web-design-and-dev-infs-202.onrender.com
 
