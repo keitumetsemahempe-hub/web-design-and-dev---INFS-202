@@ -12,18 +12,12 @@
     z-index: 100;
     flex-wrap: wrap;
     gap: 10px;
+    max-width: 100%;
+    overflow: hidden;
 }
 
-.logo {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.nav-center {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    min-width: 0;
+.nav-left, .nav-center, .nav-right {
+    max-width: 100%;
 }
 
 .search-box {
@@ -50,6 +44,15 @@
     gap: 10px;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .nav-right a {
@@ -85,12 +88,6 @@
 .nav-actions {
     display: flex;
     gap: 10px;
-    align-items: center;
-}
-
-.nav-links {
-    display: flex;
-    gap: 12px;
     align-items: center;
 }
 
