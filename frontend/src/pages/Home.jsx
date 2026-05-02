@@ -26,7 +26,7 @@ export default function Home({tasks}) {
 
       <div className="stat-card">
         <h3>Completed</h3>
-        <p className="stat-number i1n ">{completed}</p>
+        <p className="stat-number done ">{completed}</p>
       </div>
 
       <div className="stat-card">
