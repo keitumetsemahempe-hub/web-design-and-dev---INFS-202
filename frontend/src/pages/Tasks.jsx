@@ -4,7 +4,7 @@ import "./tasks.css";
 import { FiCheck, FiX, FiEye, FiEdit, FiTrash } from "react-icons/fi";
 import { useEffect } from "react";
 
-const API = "http://localhost:5000/api";
+const API = "https://web-design-and-dev-infs-202.onrender.com/api";
 
 export default function Tasks({ tasks, setTasks }) {
 

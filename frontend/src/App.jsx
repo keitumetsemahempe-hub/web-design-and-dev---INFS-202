@@ -12,7 +12,7 @@ import Login from "./pages/Login.jsx";
 
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
-const API= "http://localhost:5000/api";
+const API = "https://web-design-and-dev-infs-202.onrender.com/api";
 
 export default function App() {
 

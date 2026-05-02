@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./login.css";
 import { useNavigate } from "react-router-dom";
 
-const API = "http://localhost:5000/api";
+const API = "https://web-design-and-dev-infs-202.onrender.com/api";
 
 export default function Login() {
     const [email, setEmail] = useState("");

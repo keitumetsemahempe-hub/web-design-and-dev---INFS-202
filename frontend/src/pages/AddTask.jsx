@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./addtask.css";
 
-const API = "http://localhost:5000/api";
+const API = "https://web-design-and-dev-infs-202.onrender.com/api";
 
 export default function AddTask({ setReload }) {
     const [title, setTitle] = useState("");

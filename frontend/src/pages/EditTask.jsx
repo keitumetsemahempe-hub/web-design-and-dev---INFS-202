@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./edittask.css";
 
-const API = "http://localhost:5000/api";
+const API = "https://web-design-and-dev-infs-202.onrender.com/api";
 
 export default function EditTask({ tasks, setTasks, setReload }) {
     const { id } = useParams();
