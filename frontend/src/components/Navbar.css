@@ -12,12 +12,15 @@
     z-index: 100;
     flex-wrap: wrap;
     gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
     max-width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .nav-left, .nav-center, .nav-right {
     max-width: 100%;
+    flex-grow: 1;
 }
 
 .search-box {
@@ -117,11 +120,15 @@
     .navbar {
         flex-direction: column;
         align-items: stretch;
+        width: 100%;
+    }
+
+    .nav-left, .nav-center, .nav-right {
+        width: 100%;
     }
 
     .nav-center {
         justify-content: flex-start;
-        width: 100%;
     }
 
     .search-box {
@@ -132,9 +139,25 @@
     .nav-right {
         justify-content: space-between;
         width: 100%;
+        gap: 5px; 
     }
 
     .nav-links {
         flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    .nav-links a {
+        font-size: 12px; 
+    }
+
+    .logout-btn {
+        font-size: 12px;
+        padding: 6px 10px; 
+    }
+
+    .add-btn {
+        font-size: 12px;
+        padding: 6px 10px; 
     }
 }
