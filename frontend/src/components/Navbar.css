@@ -1,74 +1,86 @@
-
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 12px 16px;
+    justify-content: space-between;
+
+    padding: 12px 20px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
     color: white;
     position: sticky;
     top: 0;
     z-index: 100;
-    flex-wrap: wrap;
-    gap: 10px;
+
     width: 100%;
     box-sizing: border-box;
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
-.nav-left, .nav-center, .nav-right {
-    max-width: 100%;
-    flex-grow: 1;
+
+.nav-left {
+    flex: 1;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.nav-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
 }
 
 .search-box {
     display: flex;
-    gap: 10px;
     align-items: center;
+    gap: 8px;
+
     background: rgba(255, 255, 255, 0.08);
     padding: 8px 12px;
     border-radius: 10px;
+
     width: 100%;
-    max-width: 220px;
+    max-width: 300px;
 }
 
 .search-box input {
     border: none;
     background: transparent;
     color: white;
-    width: 100%;
     outline: none;
+    width: 100%;
 }
 
+
 .nav-right {
+    flex: 2;
     display: flex;
-    gap: 10px;
+    justify-content: flex-end;
     align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
+    gap: 14px;
 }
+
 
 .nav-links {
     display: flex;
-    gap: 12px;
     align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
+    gap: 14px;
 }
 
 .nav-right a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     font-size: 14px;
+    opacity: 0.85;
     transition: 0.2s;
 }
 
 .nav-right a:hover {
-    color: rgb(206, 28, 28);
+    color: #fb923c;
+    opacity: 1;
 }
+
 
 .add-btn {
     background: linear-gradient(135deg, #f97316, #fb923c);
@@ -77,11 +89,13 @@
     color: white !important;
 }
 
+
 .icon {
     font-size: 18px;
     color: #d1d5db;
     cursor: pointer;
 }
+
 
 .avatar {
     width: 32px;
@@ -89,132 +103,43 @@
     border-radius: 50%;
 }
 
-.nav-actions {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
 
 .logout-btn {
-    transition: all 0.2s ease;
     padding: 8px 12px;
-    background: transparent;
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #ffffff;
-    font-size: 13px;
     border-radius: 8px;
+
+    border: 1px solid rgba(255,255,255,0.2);
+    background: transparent;
+    color: white;
+    font-size: 13px;
+
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .logout-btn:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255,255,255,0.4);
     color: #fb923c;
-    transform: translateY(-1px);
 }
 
-.logout-btn:active {
-    transform: scale(0.96);
-}
-
-
-@media (max-width: 1024px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .nav-left, .nav-center, .nav-right {
-        width: auto;
-        flex-grow: 1;
-    }
-
-    .nav-center {
-        justify-content: flex-start;
-    }
-
-    .search-box {
-        max-width: 220px;
-        width: 100%;
-    }
-
-    .nav-right {
-        gap: 5px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .logout-btn, .add-btn {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
-}
 
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
+        gap: 10px;
         align-items: stretch;
-        width: 100%;
     }
 
-    .nav-left, .nav-center, .nav-right {
-        width: 100%;
-    }
-
-    .search-box {
-        width: 100%;
-        max-width: 100%;
-    }
-
+    .nav-left,
+    .nav-center,
     .nav-right {
-        justify-content: space-between;
+        flex: unset;
         width: 100%;
-        gap: 5px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
         justify-content: center;
     }
 
-    .nav-links a {
-        font-size: 12px;
-    }
-
-    .logout-btn, .add-btn {
-        font-size: 12px;
-        padding: 6px 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar {
-        padding: 10px 12px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links a {
-        font-size: 11px;
-        padding: 5px 0;
-    }
-
     .nav-right {
-        flex-direction: column;
-    }
-
-    .add-btn, .logout-btn {
-        font-size: 11px;
-        padding: 5px 8px;
-    }
-
-    .search-box {
-        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
