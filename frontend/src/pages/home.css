@@ -1,0 +1,103 @@
+
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.home-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.home-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.home-item p {
+    font-size: 14px;
+}
+
+.home-item .button {
+    background: #fb923c;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.home-item .button:hover {
+    background: #f97316;
+}
+
+/* Tablet (Up to 1024px) */
+@media (max-width: 1024px) {
+    .home-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-item {
+        padding: 15px;
+    }
+
+    .home-item h3 {
+        font-size: 16px;
+    }
+
+    .home-item p {
+        font-size: 13px;
+    }
+}
+
+/* Mobile (Up to 768px) */
+@media (max-width: 768px) {
+    .home-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-item {
+        padding: 12px;
+    }
+
+    .home-item h3 {
+        font-size: 14px;
+    }
+
+    .home-item p {
+        font-size: 12px;
+    }
+}
+
+/* Extra Small (Up to 480px) */
+@media (max-width: 480px) {
+    .home-item {
+        padding: 10px;
+    }
+
+    .home-item h3 {
+        font-size: 12px;
+    }
+
+    .home-item p {
+        font-size: 11px;
+    }
+
+    .home-item .button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
